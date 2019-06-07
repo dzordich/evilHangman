@@ -34,7 +34,7 @@ def game(word_list):
 
     #sets list of words for each diff
     for word in word_list:
-        if len(word) >= 4 and len(word) <= 5:
+        if len(word) > 4 and len(word) < 6:
             ez_words.append(word)
         elif len(word) >= 6 and len(word) <= 7:
             norm_words.append(word)
