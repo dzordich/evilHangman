@@ -77,6 +77,8 @@ def game(word_list):
         guesses.append(round_guess)
         if round_guess not in valid_guess or len(round_guess) > 1:
             print("Not a valid guess. ")
+        elif round_guess in guesses:
+            print("You've already guessed that letter. Try a different one. ")
         else:
             if round_guess in word:
                 n = 0
